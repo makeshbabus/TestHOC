@@ -27,6 +27,7 @@ const Hoc = (WrappedComponent, entity) => {
           const { title } = d;
           return title.indexOf(term) >= 0;
         }
+        return false;
       });
       return (
         <div>
